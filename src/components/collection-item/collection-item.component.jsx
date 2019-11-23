@@ -25,10 +25,10 @@ const CollectionItem = ({ item, addItem}) => {
         <CustomButton onClick= {() => addItem(item)} inverted>
         Add to Cart</CustomButton>
     </div>);
-}
+};
 
 const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
-})
+});
 
 export default connect(null, mapDispatchToProps)(CollectionItem);
